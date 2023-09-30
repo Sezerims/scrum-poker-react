@@ -1,9 +1,10 @@
 import React from "react";
+import currentYear from "../currentYear";
 
 const Footer = () => {
     return (
         <footer>
-            <p>İsmail Sezer Bullalıoğlu &copy; 2023</p>
+            <p>İsmail Sezer Bullalıoğlu &copy; {currentYear}</p>
         </footer>
     );
 }
