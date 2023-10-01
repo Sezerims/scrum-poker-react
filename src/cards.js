@@ -1,3 +1,3 @@
-const cards = [1, 2, 3, "✨"];
+const cards = [1, 2, 3, "🌟"];
 
 export default cards;

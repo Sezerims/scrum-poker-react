@@ -30,6 +30,8 @@ body {
     justify-content: space-between;
 
     min-height: 100vh;
+
+    background-color: var(--bg-color-one);
 }
 
 a {
@@ -216,20 +218,109 @@ header h1 {
 }
 */
 
-.selected {
-    /* background-color: var(--border-color); */
-    color: var(--text-color-one);
-    background-color: var(--bg-color-one);
-
-    transition: 0.15s;
-}
-
 .toggle {
     margin: 1rem;
 
     font-size: 2rem;
 }
 
+.custom-vote {
+    display: grid;
+    column-gap: 1rem;
+    row-gap: 1rem;
+
+    font-size: 1.25rem;
+
+    width: fit-content;
+    margin: auto;
+    padding: 1rem;
+
+    text-align: center;
+
+    border: var(--border);
+    border-radius: 0.75rem;
+}
+
+.custom-vote input {
+    display: block;
+
+    color: var(--text-color-two);
+    font-size: 1.25rem;
+
+    padding: 1rem 1.5rem;
+
+    border: var(--border);
+    border-radius: 0.75rem;
+
+    outline: none;
+    transition: border 0.15s, outline 0.15s;
+}
+
+.custom-vote input:focus {
+    border-color: var(--bg-color-one);
+    outline: 4px solid var(--text-color-one);
+
+    transition: border 0.15s, outline 0.15s;
+}
+
+.button-container {
+    display: grid;
+    column-gap: 1rem;
+    row-gap: 1rem;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+.custom-vote button {
+    color: var(--text-color-two);
+    background-color: var(--text-color-one);
+
+    font-size: 1.25rem;
+
+    border: var(--border);
+    border-radius: 0.75rem;
+
+    padding: 1rem 1.5rem;
+
+    transition: color 0.15s, background-color 0.15s;
+}
+
+.selected, .custom-vote button:hover {
+    color: var(--text-color-one);
+    background-color: var(--bg-color-one);
+
+    transition: color 0.15s, background-color 0.15s;
+}
+
+.selected, .custom-vote button:hover {
+    color: var(--text-color-one);
+    background-color: var(--bg-color-one);
+
+    transition: color 0.15s, background-color 0.15s;
+}
+
+/*
+.custom-vote button.cancel-button:hover {
+    background-color: var(--face-down-color);
+}
+*/
+
+/* Remove arrows in number input fields */
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 .hidden {
     visibility: hidden;
+}
+
+.vanished {
+    display: none;
 }

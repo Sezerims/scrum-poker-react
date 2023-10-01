@@ -3,7 +3,7 @@ import Card from "./Card";
 import cards from "../cards";
 
 const createCard = (card, index) => {
-    return <Card key={index} value={card} />
+    return <Card key={index} value={card}/>
 }
 
 const Cards = () => {
