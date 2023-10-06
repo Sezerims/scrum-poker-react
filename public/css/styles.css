@@ -258,7 +258,7 @@ header h1 {
 
 .custom-vote input:focus {
     border-color: var(--bg-color-one);
-    outline: 4px solid var(--text-color-one);
+    outline: 0.25rem solid var(--text-color-one);
 
     transition: border 0.15s, outline 0.15s;
 }
